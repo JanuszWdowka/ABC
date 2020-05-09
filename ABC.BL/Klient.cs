@@ -2,6 +2,8 @@
 {
     public class Klient
     {
+        public static int Licznik { get; set; }
+
         private string _nazwisko;
 
         public string Nazwisko
