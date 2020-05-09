@@ -26,7 +26,13 @@
         {
             get
             {
-                return Imie + ", " + Nazwisko;
+                string ImieNazwisko = Imie;
+                if(!string.IsNullOrWhiteSpace(Nazwisko) && !string.IsNullOrWhiteSpace(ImieNazwisko))
+                {
+                    ImieNazwisko += ", ";
+                }
+                ImieNazwisko += Nazwisko;
+                return ImieNazwisko;
             }
         }
     }
