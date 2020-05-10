@@ -65,5 +65,26 @@ namespace ABC.BLTest
 
             Assert.AreEqual(3, Klient.Licznik);
         }
+
+        [TestMethod]
+        public void ZwalidujTest()
+        {
+            var klient = new Klient();
+
+            klient.Nazwisko = "Nowak";
+            klient.Email = "tomek@dev.hobby.pl";
+
+            Assert.AreEqual(true, klient.Zwaliduj());
+        }
+
+        [TestMethod]
+        public void ZwalidujBrakNazwiskaTest()
+        {
+            var klient = new Klient();
+
+            klient.Email = "tomek@dev.hobby.pl";
+
+            Assert.AreEqual(false, klient.Zwaliduj());
+        }
     }
 }
