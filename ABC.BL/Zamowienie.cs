@@ -2,35 +2,34 @@
 
 namespace ABC.BL
 {
-    public class Produkt
+    public class Zamowienie
     {
-        public Produkt()
+        public Zamowienie()
         {
 
         }
 
-        public Produkt(int produktId)
+        public Zamowienie(int zamowienieId)
         {
-            ProduktId = produktId;
+            ZamowienieId = zamowienieId;
         }
 
-        public int ProduktId { get; private set; }
-        public Decimal? AktualnaCena { get; set; } //Decima? rozróznia 0 od nulla
-        public string Opis { get; set; }
-        public string NazwaProduktu { get; set; }
+        public int ZamowienieId { get; private set; }
+
+        public DateTimeOffset? DataZamowienia { get; set; } // ? oznacza że może być przypisana wartość null, ten typ stosuje do strefu czasowej
 
         /// <summary>
-        /// Pobierz jeden produkt
+        /// Pobierz jedno zamowienie
         /// </summary>
         /// <param name="produktId"></param>
         /// <returns></returns>
-        public Produkt Pobierz(int produktId)
+        public Zamowienie Pobierz(int zamowienieId)
         {
-            return new Produkt();
+            return new Zamowienie();
         }
 
         /// <summary>
-        /// Zapisujemy bierzący produkt
+        /// Zapisujemy bierzące zamowienie
         /// </summary>
         /// <returns></returns>
         public bool Zapisz()
@@ -39,13 +38,13 @@ namespace ABC.BL
         }
 
         /// <summary>
-        /// Sprawdza dane produktu
+        /// Sprawdza dane zamowienie
         /// </summary>
         /// <returns></returns>
         public bool Zwaliduj()
         {
             var poprawne = true;
-            if (string.IsNullOrWhiteSpace(NazwaProduktu))
+            if (DataZamowienia == null)
                 poprawne = false;
             return poprawne;
         }
