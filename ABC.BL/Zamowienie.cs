@@ -21,7 +21,7 @@ namespace ABC.BL
         /// <summary>
         /// Pobierz jedno zamowienie
         /// </summary>
-        /// <param name="produktId"></param>
+        /// <param name="zamowienieId"></param>
         /// <returns></returns>
         public Zamowienie Pobierz(int zamowienieId)
         {
