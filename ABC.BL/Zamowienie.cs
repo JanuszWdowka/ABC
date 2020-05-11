@@ -8,14 +8,12 @@ namespace ABC.BL
         {
 
         }
-
         public Zamowienie(int zamowienieId)
         {
             ZamowienieId = zamowienieId;
         }
 
         public int ZamowienieId { get; private set; }
-
         public DateTimeOffset? DataZamowienia { get; set; } // ? oznacza że może być przypisana wartość null, ten typ stosuje do strefu czasowej
 
         /// <summary>

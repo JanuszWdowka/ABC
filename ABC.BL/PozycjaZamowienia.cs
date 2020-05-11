@@ -12,18 +12,14 @@ namespace ABC.BL
         {
 
         }
-
         public PozycjaZamowienia(int pozycjaZamowieniaId)
         {
             PozycjaZamowieniaId = pozycjaZamowieniaId;
         }
 
         public int PozycjaZamowieniaId { get; private set; }
-
         public int Ilosc { get; set; }
-
         public int ProduktId { get; set; }
-
         public decimal? CenaZakupu { get; set; }
 
         /// <summary>

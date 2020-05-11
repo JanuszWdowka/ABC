@@ -14,9 +14,7 @@ namespace ABC.BL
         }
         
         public static int Licznik { get; set; }
-
         private string _nazwisko;
-
         public string Nazwisko
         {
             get
@@ -28,13 +26,9 @@ namespace ABC.BL
                 _nazwisko = value;
             }
         }
-
         public string Imie { get; set; }
-
         public string Email { get; set; }
-
         public int KlientId { get; private set; }
-
         public string ImieNazwisko
         {
             get

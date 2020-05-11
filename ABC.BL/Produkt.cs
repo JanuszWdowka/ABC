@@ -8,7 +8,6 @@ namespace ABC.BL
         {
 
         }
-
         public Produkt(int produktId)
         {
             ProduktId = produktId;
