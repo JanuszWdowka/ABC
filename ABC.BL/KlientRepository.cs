@@ -1,9 +1,17 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace ABC.BL
 {
     public class KlientRepository
     {
+        private AdresRepository adresRepository { get; set; }
+
+        public KlientRepository()
+        {
+            adresRepository = new AdresRepository();
+        }
+
         /// <summary>
         /// Zapisujemy obecnego klienta
         /// </summary>
@@ -21,7 +29,7 @@ namespace ABC.BL
         public Klient Pobierz(int klientId)
         {
             Klient klient = new Klient(klientId);
-
+            klient.ListaAdresow = adresRepository.PobierzPoKlientId(klientId).ToList();
             if(klientId == 1)
             {
                 klient.Email = "marcindev@hobby.pl";
