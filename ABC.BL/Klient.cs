@@ -12,7 +12,7 @@ namespace ABC.BL
         {
             KlientId = klientId;
         }
-
+        
         public static int Licznik { get; set; }
 
         private string _nazwisko;
