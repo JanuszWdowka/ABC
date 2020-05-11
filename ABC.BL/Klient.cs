@@ -52,6 +52,7 @@ namespace ABC.BL
 
             return poprawne;
         }
+
         /// <summary>
         /// Zapisujemy obecnego klienta
         /// </summary>
