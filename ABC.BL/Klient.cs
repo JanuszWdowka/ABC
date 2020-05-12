@@ -53,24 +53,5 @@ namespace ABC.BL
 
             return poprawne;
         }
-
-        /// <summary>
-        /// Zapisujemy obecnego klienta
-        /// </summary>
-        /// <returns>Zwraca true jeżeli zapisało lub false jeśli się to nie udało</returns>
-        public bool Zapisz()
-        {
-            return true;
-        }
-
-        public Klient Pobierz(int klientId)
-        {
-            return new Klient();
-        }
-
-        public List<Klient> Pobierz()
-        {
-            return new List<Klient>();
-        }
     }
 }

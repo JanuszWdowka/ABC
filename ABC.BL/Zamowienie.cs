@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ABC.BL
 {
@@ -15,25 +16,9 @@ namespace ABC.BL
 
         public int ZamowienieId { get; private set; }
         public DateTimeOffset? DataZamowienia { get; set; } // ? oznacza że może być przypisana wartość null, ten typ stosuje do strefu czasowej
-
-        /// <summary>
-        /// Pobierz jedno zamowienie
-        /// </summary>
-        /// <param name="zamowienieId"></param>
-        /// <returns></returns>
-        public Zamowienie Pobierz(int zamowienieId)
-        {
-            return new Zamowienie();
-        }
-
-        /// <summary>
-        /// Zapisujemy bierzące zamowienie
-        /// </summary>
-        /// <returns></returns>
-        public bool Zapisz()
-        {
-            return true;
-        }
+        public List<PozycjaZamowienia> pozycjeZamowienia { get; set; }
+        public int KlientId { get; set; }
+        public int AdresDostawyId { get; set; }
 
         /// <summary>
         /// Sprawdza dane zamowienie

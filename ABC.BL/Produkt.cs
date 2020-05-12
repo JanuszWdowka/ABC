@@ -17,25 +17,7 @@ namespace ABC.BL
         public Decimal? AktualnaCena { get; set; } //Decima? rozróznia 0 od nulla
         public string Opis { get; set; }
         public string NazwaProduktu { get; set; }
-
-        /// <summary>
-        /// Pobierz jeden produkt
-        /// </summary>
-        /// <param name="produktId"></param>
-        /// <returns></returns>
-        public Produkt Pobierz(int produktId)
-        {
-            return new Produkt();
-        }
-
-        /// <summary>
-        /// Zapisujemy bierzący produkt
-        /// </summary>
-        /// <returns></returns>
-        public bool Zapisz()
-        {
-            return true;
-        }
+        
 
         /// <summary>
         /// Sprawdza dane produktu
