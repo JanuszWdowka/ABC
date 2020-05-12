@@ -30,6 +30,7 @@ namespace ABC.BL
         public string Email { get; set; }
         public int KlientId { get; private set; }
         public List<Adres> ListaAdresow { get; set; }
+        public int KlientTyp { get; set; }
         public string ImieNazwisko
         {
             get
