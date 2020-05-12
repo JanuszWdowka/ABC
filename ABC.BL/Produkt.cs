@@ -30,5 +30,10 @@ namespace ABC.BL
                 poprawne = false;
             return poprawne;
         }
+
+        public override string ToString()
+        {
+            return NazwaProduktu;
+        }
     }
 }

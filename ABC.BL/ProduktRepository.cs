@@ -1,4 +1,6 @@
-﻿namespace ABC.BL
+﻿using System;
+
+namespace ABC.BL
 {
     public class ProduktRepository
     {
@@ -10,13 +12,18 @@
         public Produkt Pobierz(int produktId)
         {
             Produkt produkt = new Produkt(produktId);
+            Object mojObiekt = new Object();
+            Console.WriteLine("Objekt: " + mojObiekt.ToString());
 
-            if(produktId == 2)
+            if (produktId == 2)
             {
                 produkt.NazwaProduktu = "Klocki";
                 produkt.Opis = "Klocki do zabawy dla dzieci powyżej 3 lat";
                 produkt.AktualnaCena = 199.99M;
             }
+
+            Console.WriteLine("Produkt: " + produkt.ToString());
+
 
             return produkt;
         }

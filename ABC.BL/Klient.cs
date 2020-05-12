@@ -54,5 +54,10 @@ namespace ABC.BL
 
             return poprawne;
         }
+
+        public override string ToString()
+        {
+            return ImieNazwisko;
+        }
     }
 }
