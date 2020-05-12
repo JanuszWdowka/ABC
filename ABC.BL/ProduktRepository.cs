@@ -32,9 +32,22 @@ namespace ABC.BL
         /// Zapisujemy bierzący produkt
         /// </summary>
         /// <returns></returns>
-        public bool Zapisz()
+        public bool Zapisz(Produkt produkt)
         {
-            return true;
+            var sukces = true;
+            if(produkt.MaZmiany && produkt.DaneSaPrawidlowe)
+            {
+                if (produkt.JestNowy)
+                {
+                    //wywołuje inserta
+                }
+                else
+                {
+                    //robi update
+                }
+
+            }
+            return sukces;
         }
     }
 }

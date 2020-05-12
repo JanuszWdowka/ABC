@@ -16,9 +16,22 @@ namespace ABC.BL
         /// Zapisujemy obecnego klienta
         /// </summary>
         /// <returns></returns>
-        public bool Zapisz()
+        public bool Zapisz(Klient klient)
         {
-            return true;
+            var sukces = true;
+            if (klient.MaZmiany && klient.DaneSaPrawidlowe)
+            {
+                if (klient.JestNowy)
+                {
+                    //wywołuje inserta
+                }
+                else
+                {
+                    //robi update
+                }
+
+            }
+            return sukces;
         }
 
         /// <summary>
