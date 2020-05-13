@@ -13,9 +13,13 @@ namespace Common
                 foreach (var litera in zrodlo)
                 {
                     if (Char.IsUpper(litera))
+                    {
+                        wynik = wynik.Trim();
                         wynik += " ";
+                    }
                     wynik += litera;
                 }
+                wynik = wynik.Trim();
             }
             return wynik;
         }
