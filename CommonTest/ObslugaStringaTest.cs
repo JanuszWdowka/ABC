@@ -12,9 +12,8 @@ namespace CommonTest
         {
             var zrodlo = "KlockiLego";
             var oczekiwana = "Klocki Lego";
-            var obslugaStringa = new ObslugaStringa();
 
-            var aktualna = obslugaStringa.WstawSpacje(zrodlo);
+            var aktualna = ObslugaStringa.WstawSpacje(zrodlo);
 
             Assert.AreEqual(oczekiwana, aktualna);
         }
@@ -24,9 +23,8 @@ namespace CommonTest
         {
             var zrodlo = "Klocki Lego";
             var oczekiwana = "Klocki Lego";
-            var obslugaStringa = new ObslugaStringa();
 
-            var aktualna = obslugaStringa.WstawSpacje(zrodlo);
+            var aktualna = ObslugaStringa.WstawSpacje(zrodlo);
 
             Assert.AreEqual(oczekiwana, aktualna);
         }

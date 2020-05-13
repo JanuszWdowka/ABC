@@ -2,9 +2,9 @@
 
 namespace Common
 {
-    public class ObslugaStringa
+    public static class ObslugaStringa
     {
-        public string WstawSpacje(string zrodlo)
+        public static string WstawSpacje(string zrodlo)
         {
             string wynik = string.Empty;
 
@@ -12,7 +12,7 @@ namespace Common
             {
                 foreach (var litera in zrodlo)
                 {
-                    if (Char.IsUpper(litera))
+                    if (char.IsUpper(litera))
                     {
                         wynik = wynik.Trim();
                         wynik += " ";
