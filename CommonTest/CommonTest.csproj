@@ -51,11 +51,16 @@
   <ItemGroup>
     <Compile Include="ObslugaStringaTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UslugaLogowaniaTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ABC.BL\ABC.BL.csproj">
+      <Project>{C3B10AD9-F0AF-4D1A-B502-412F73EACA22}</Project>
+      <Name>ABC.BL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{dc610f8f-8d07-4e80-a9f5-e2fe6e4a6d10}</Project>
       <Name>Common</Name>

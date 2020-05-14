@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Common
 {
-    public class UlsugaLogowanie
+    public class UslugaLogowanie
     {
         public static void PiszDoPliku(List<ILogowanie> ZmienioneElementy)
         {
