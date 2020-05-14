@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Common;
+using System;
 using System.Collections.Generic;
 
 namespace ABC.BL
 {
-    public class Zamowienie : KlasaBazowa
+    public class Zamowienie : KlasaBazowa, ILogowanie
     {
         public Zamowienie()
         {
@@ -35,6 +36,15 @@ namespace ABC.BL
         public override string ToString()
         {
             return DataZamowienia.Value.Date + " (" + ZamowienieId + ")";
+        }
+
+        public string Log()
+        {
+            var logTekst = ZamowienieId + ": " +
+                           "Data: " + DataZamowienia.Value.Date + " " +
+                           "Status: " + StanObiektu.ToString();
+
+            return logTekst;
         }
     }
 }
